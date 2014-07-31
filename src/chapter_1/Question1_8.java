@@ -9,15 +9,15 @@ package chapter_1;
 public class Question1_8 {
 	// TC:O(1), SC:O(n)
 	public static boolean isRotation(String s1, String s2) {
-		if (s2.isEmpty()) return s1.isEmpty();		// err1: miss empty check
+		if (s1.length() != s2.length()) return false;		// err1: miss length check
 		return isSubstring(s1 + s1, s2);
 	}
 	
 	public static boolean isSubstring(String big, String small) {
         if (big.indexOf(small) >= 0) {
-                return true;
+            return true;
         } else {
-                return false;
+            return false;
         }
 	}
 	
