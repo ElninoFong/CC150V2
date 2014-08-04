@@ -46,7 +46,7 @@ public class Question2_7 {
 	// TC:O(n), SC:O(n)
 	// recursive
 	public static boolean isPalindrome2(LinkedListNode head) {
-		if (head == null) return true;
+		if (head == null) return true; 
 		int length = getLength(head);
 		Question2_7.Result res = isPalindrome2(head, length);
 		return res.isPal;
