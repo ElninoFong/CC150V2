@@ -113,7 +113,7 @@ public class Question2_5 {
 	public static void main(String[] args) {
 		LinkedListNode lA1 = new LinkedListNode(4, null, null);
         LinkedListNode lA2 = new LinkedListNode(1, null, lA1);
-//        LinkedListNode lA3 = new LinkedListNode(5, null, lA2);
+        LinkedListNode lA3 = new LinkedListNode(5, null, lA2);
         
         LinkedListNode lB1 = new LinkedListNode(5, null, null);
         LinkedListNode lB2 = new LinkedListNode(9, null, lB1);
@@ -154,5 +154,6 @@ public class Question2_5 {
         
         System.out.print(l11 + " + " + l22 + " = " + l4 + "\n");
         System.out.print(l11 + " + " + l22 + " = " + (l11 + l22));  
+        
 	}
 }
